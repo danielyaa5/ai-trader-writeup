@@ -1,5 +1,7 @@
 # Building an AI Trader With Deterministic Risk Controls
 
+*Daniel Yakobian · October 22, 2026 · [Read it on danielyakobian.com](https://danielyakobian.com/blog/ai-trader-risk-controls.html)*
+
 I built an experimental trading system that uses one model to propose trades, two others to review them, and Python to enforce the rules between those steps.
 
 The interesting engineering problem is deciding what an AI-generated proposal is allowed to do. A convincing explanation cannot override a position limit. Agreement between models cannot make an old quote current. An accepted order cannot be treated as a confirmed fill.
